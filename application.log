@@ -1,0 +1,126 @@
+2019-07-25 00:11:49,614 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://216.10.245.166:80
+2019-07-25 00:11:49,630 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to 216.10.245.166:80
+2019-07-25 00:11:49,919 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-07-25 00:11:49,921 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2019-07-25 00:11:49,921 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-07-25 00:11:49,922 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-07-25 00:11:49,922 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2019-07-25 00:11:49,923 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+2019-07-25 00:11:49,923 DEBUG [main] wire:73 -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+2019-07-25 00:11:49,924 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2019-07-25 00:11:49,924 DEBUG [main] wire:73 -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2019-07-25 00:11:49,924 DEBUG [main] wire:73 -  >> "Content-Length: 267[\r][\n]"
+2019-07-25 00:11:49,925 DEBUG [main] wire:73 -  >> "Host: 216.10.245.166[\r][\n]"
+2019-07-25 00:11:49,925 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-07-25 00:11:49,925 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_191)[\r][\n]"
+2019-07-25 00:11:49,925 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-07-25 00:11:49,926 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2019-07-25 00:11:49,926 DEBUG [main] headers:278 - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+2019-07-25 00:11:49,927 DEBUG [main] headers:281 - >> Accept: */*
+2019-07-25 00:11:49,927 DEBUG [main] headers:281 - >> Content-Type: text/plain; charset=ISO-8859-1
+2019-07-25 00:11:49,930 DEBUG [main] headers:281 - >> Content-Length: 267
+2019-07-25 00:11:49,930 DEBUG [main] headers:281 - >> Host: 216.10.245.166
+2019-07-25 00:11:49,931 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2019-07-25 00:11:49,931 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_191)
+2019-07-25 00:11:49,931 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2019-07-25 00:11:49,932 DEBUG [main] wire:87 -  >> "{"location": {"lat": -33.8669710,"lng": 151.1958750},"accuracy": 50,"name": "Google Shoes!","phone_number": "(02) 9374 4000","address": "48 Pirrama Road, Pyrmont, NSW 2009, Australia","types": ["shoe_store"],"website": "http://www.google.com.au/","language": "en-AU"}"
+2019-07-25 00:11:50,246 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-07-25 00:11:50,250 DEBUG [main] wire:73 -  << "Date: Wed, 24 Jul 2019 21:13:39 GMT[\r][\n]"
+2019-07-25 00:11:50,251 DEBUG [main] wire:73 -  << "Server: Apache[\r][\n]"
+2019-07-25 00:11:50,252 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-07-25 00:11:50,253 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2019-07-25 00:11:50,253 DEBUG [main] wire:73 -  << "Access-Control-Max-Age: 3600[\r][\n]"
+2019-07-25 00:11:50,254 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2019-07-25 00:11:50,255 DEBUG [main] wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2019-07-25 00:11:50,256 DEBUG [main] wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2019-07-25 00:11:50,257 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-07-25 00:11:50,258 DEBUG [main] wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2019-07-25 00:11:50,259 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-07-25 00:11:50,260 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-07-25 00:11:50,261 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2019-07-25 00:11:50,262 DEBUG [main] headers:265 - << Date: Wed, 24 Jul 2019 21:13:39 GMT
+2019-07-25 00:11:50,263 DEBUG [main] headers:265 - << Server: Apache
+2019-07-25 00:11:50,264 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2019-07-25 00:11:50,265 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST
+2019-07-25 00:11:50,266 DEBUG [main] headers:265 - << Access-Control-Max-Age: 3600
+2019-07-25 00:11:50,266 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2019-07-25 00:11:50,267 DEBUG [main] headers:265 - << Keep-Alive: timeout=5, max=100
+2019-07-25 00:11:50,268 DEBUG [main] headers:265 - << Connection: Keep-Alive
+2019-07-25 00:11:50,268 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2019-07-25 00:11:50,269 DEBUG [main] headers:265 - << Content-Type: application/json;charset=UTF-8
+2019-07-25 00:11:50,275 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2019-07-25 00:11:50,289 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2019-07-25 00:11:50,289 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-07-25 00:11:50,366 DEBUG [main] wire:73 -  << "c2[\r][\n]"
+2019-07-25 00:11:50,366 DEBUG [main] wire:87 -  << "{"status":"OK","place_id":"fd046d75aa43aaced65cd4860b6b5e61","scope":"APP","reference":"48f7cff054d43db3ab93a16e582c3f9848f7cff054d43db3ab93a16e582c3f98","id":"48f7cff054d43db3ab93a16e582c3f98"}"
+2019-07-25 00:11:50,367 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-07-25 00:11:50,367 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2019-07-25 00:11:50,367 DEBUG [main] wire:73 -  << "[\r][\n]"
+2019-07-25 00:11:50,367 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@c35172e
+2019-07-25 00:11:50,367 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2019-07-25 00:11:50,624  INFO [main] RestAssureTest:135 - farukakyol
+2019-07-25 00:11:50,630  INFO [main] RestAssureTest:138 - 64
+2019-07-25 00:11:50,641  INFO [main] RestAssureTest:143 - 4
+2019-07-25 00:11:50,648  INFO [main] RestAssureTest:143 - 8
+2019-07-25 00:11:50,653  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,658  INFO [main] RestAssureTest:143 - 7
+2019-07-25 00:11:50,664  INFO [main] RestAssureTest:143 - c
+2019-07-25 00:11:50,669  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,674  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,679  INFO [main] RestAssureTest:143 - 0
+2019-07-25 00:11:50,684  INFO [main] RestAssureTest:143 - 5
+2019-07-25 00:11:50,688  INFO [main] RestAssureTest:143 - 4
+2019-07-25 00:11:50,693  INFO [main] RestAssureTest:143 - d
+2019-07-25 00:11:50,698  INFO [main] RestAssureTest:143 - 4
+2019-07-25 00:11:50,704  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,708  INFO [main] RestAssureTest:143 - d
+2019-07-25 00:11:50,713  INFO [main] RestAssureTest:143 - b
+2019-07-25 00:11:50,717  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,721  INFO [main] RestAssureTest:143 - a
+2019-07-25 00:11:50,725  INFO [main] RestAssureTest:143 - b
+2019-07-25 00:11:50,729  INFO [main] RestAssureTest:143 - 9
+2019-07-25 00:11:50,733  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,737  INFO [main] RestAssureTest:143 - a
+2019-07-25 00:11:50,741  INFO [main] RestAssureTest:143 - 1
+2019-07-25 00:11:50,745  INFO [main] RestAssureTest:143 - 6
+2019-07-25 00:11:50,749  INFO [main] RestAssureTest:143 - e
+2019-07-25 00:11:50,754  INFO [main] RestAssureTest:143 - 5
+2019-07-25 00:11:50,758  INFO [main] RestAssureTest:143 - 8
+2019-07-25 00:11:50,762  INFO [main] RestAssureTest:143 - 2
+2019-07-25 00:11:50,766  INFO [main] RestAssureTest:143 - c
+2019-07-25 00:11:50,769  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,773  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,777  INFO [main] RestAssureTest:143 - 9
+2019-07-25 00:11:50,781  INFO [main] RestAssureTest:143 - 8
+2019-07-25 00:11:50,785  INFO [main] RestAssureTest:143 - 4
+2019-07-25 00:11:50,789  INFO [main] RestAssureTest:143 - 8
+2019-07-25 00:11:50,793  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,797  INFO [main] RestAssureTest:143 - 7
+2019-07-25 00:11:50,800  INFO [main] RestAssureTest:143 - c
+2019-07-25 00:11:50,804  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,808  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,813  INFO [main] RestAssureTest:143 - 0
+2019-07-25 00:11:50,817  INFO [main] RestAssureTest:143 - 5
+2019-07-25 00:11:50,821  INFO [main] RestAssureTest:143 - 4
+2019-07-25 00:11:50,825  INFO [main] RestAssureTest:143 - d
+2019-07-25 00:11:50,829  INFO [main] RestAssureTest:143 - 4
+2019-07-25 00:11:50,833  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,837  INFO [main] RestAssureTest:143 - d
+2019-07-25 00:11:50,841  INFO [main] RestAssureTest:143 - b
+2019-07-25 00:11:50,845  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,849  INFO [main] RestAssureTest:143 - a
+2019-07-25 00:11:50,852  INFO [main] RestAssureTest:143 - b
+2019-07-25 00:11:50,856  INFO [main] RestAssureTest:143 - 9
+2019-07-25 00:11:50,860  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,864  INFO [main] RestAssureTest:143 - a
+2019-07-25 00:11:50,867  INFO [main] RestAssureTest:143 - 1
+2019-07-25 00:11:50,871  INFO [main] RestAssureTest:143 - 6
+2019-07-25 00:11:50,875  INFO [main] RestAssureTest:143 - e
+2019-07-25 00:11:50,878  INFO [main] RestAssureTest:143 - 5
+2019-07-25 00:11:50,883  INFO [main] RestAssureTest:143 - 8
+2019-07-25 00:11:50,887  INFO [main] RestAssureTest:143 - 2
+2019-07-25 00:11:50,890  INFO [main] RestAssureTest:143 - c
+2019-07-25 00:11:50,895  INFO [main] RestAssureTest:143 - 3
+2019-07-25 00:11:50,899  INFO [main] RestAssureTest:143 - f
+2019-07-25 00:11:50,903  INFO [main] RestAssureTest:143 - 9
+2019-07-25 00:11:50,908  INFO [main] RestAssureTest:143 - 8
