@@ -138,17 +138,45 @@ public class RestAssureTest {
         log.info(count);
 
 
-        for(int i = 0 ; i < count;i++){
+        for (int i = 0; i < count; i++) {
 
-            log.info(js.get("reference["+i+"]"));
+            log.info(js.get("reference[" + i + "]"));
 
         }
 
 
+    }
+
+    @Test
+    public void setDynamicData(){
 
 
+        // Task 1 grab the response
+
+        RestAssured.baseURI = properties.getProperty("HOST");
+        System.out.println(properties.getProperty("HOST"));
+
+        Response res = given().
+
+                queryParam("key", properties.getProperty("KEY")).log().all().
+
+                body(payLoad.setLocation("-33.8669710,", "151.1958750")).
+
+                when().
+
+                post(Data.postDataRest()).
+
+                then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().
+
+                body("status", Matchers.equalTo("OK")).extract().response();
+
+        String responseString = res.asString();
+
+        System.out.println(responseString);
 
 
     }
+
+
 }
 

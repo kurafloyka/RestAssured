@@ -31,4 +31,38 @@ public class payLoad {
 
         return payLoad;
     }
+
+
+    public static String setLocation(String lat, String lng) {
+
+
+        String payLoad = "{" +
+
+                "\"location\": {" +
+
+                "\"lat\": " + lat +
+
+                "\"lng\": " + lng +
+
+                "}," +
+
+                "\"accuracy\": 50," +
+
+                "\"name\": \"Google Shoes!\"," +
+
+                "\"phone_number\": \"(02) 9374 4000\"," +
+
+                "\"address\": \"48 Pirrama Road, Pyrmont, NSW 2009, Australia\"," +
+
+                "\"types\": [\"shoe_store\"]," +
+
+                "\"website\": \"http://www.google.com.au/\"," +
+
+                "\"language\": \"en-AU\"" +
+
+                "}";
+
+
+        return payLoad;
+    }
 }
