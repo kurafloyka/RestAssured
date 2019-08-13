@@ -5,11 +5,15 @@ import io.restassured.response.Response;
 import org.apache.log4j.Logger;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
+
 
 import static io.restassured.RestAssured.given;
 
@@ -147,8 +151,8 @@ public class RestAssureTest {
 
     }
 
-    @Test
-    public void setDynamicData(){
+    @Test(dataProvider = "LocationData")
+    public void setDynamicData(String lat, String lng) {
 
 
         // Task 1 grab the response
@@ -160,7 +164,7 @@ public class RestAssureTest {
 
                 queryParam("key", properties.getProperty("KEY")).log().all().
 
-                body(payLoad.setLocation("-33.8669710,", "151.1958750")).
+                body(payLoad.setLocation(lat, lng)).
 
                 when().
 
@@ -173,6 +177,51 @@ public class RestAssureTest {
         String responseString = res.asString();
 
         System.out.println(responseString);
+
+
+    }
+
+
+    @DataProvider(name = "LocationData")
+    public Object[][] getDataAnnotation() {
+        return new Object[][]{{"-33.8669710,", "151.1958750"}, {"-34.8669710,", "151.1958750"}, {"-35.8669710,", "151.1958750"}};
+    }
+
+
+    @Test
+
+    public void addBook() throws IOException {
+
+
+        RestAssured.baseURI = "http://216.10.245.166";
+
+        Response resp = given().
+
+                header("Content-Type", "application/json").
+
+                body(GenerateStringFromResource("C:\\Users\\FARUK\\Desktop\\RestAssured\\src\\main\\resources\\Addbookdetails.json")).
+
+                when().
+
+                post("/Library/Addbook.php").
+
+                then().assertThat().statusCode(200).
+
+                extract().response();
+
+        String responseString = resp.asString();
+
+        System.out.println(responseString);
+
+
+        //deleteBOok
+
+    }
+
+    public static String GenerateStringFromResource(String path) throws IOException {
+
+
+        return new String(Files.readAllBytes(Paths.get(path)));
 
 
     }
